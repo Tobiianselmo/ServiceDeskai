@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Admin | ServiceDeskai</title>
+		<link href="../src/default.css" rel="stylesheet">
+		<link href="../src/admin.css" rel="stylesheet">
+	</head>
+	<body>
+		<nav>
+			<div>
+				<button id="logout-button" class="logout-button">
+					<a href="login.html">Log out</a>
+				</button>
+			</div>
+		</nav>
+		<div class="camera-container">
+			<h1 class="admin-h1">Admin Dashboard</h1>
+			<p class="admin-p">Click the button below to open the camera:</p>
+			<button id="openCameraButton" class="camera-button">Open Camera</button>
+			<div id="videoContainer" class="video-container">
+				<video id="video" autoplay></video>
+			</div>
+		</div>
+		<script src="../src/admin.js"></script>
+	</body>
+</html>

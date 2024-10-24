@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Fuente para todo el cuerpo */
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura completa de la ventana */
+    padding: 20px; /* Espaciado interno */
+    background-color: rgb(36, 121, 125); /* Color de fondo */
+    color: #fff; /* Color del texto */
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 16px; /* Margen inferior */
+    font-size: 24px; /* Tamaño de fuente */
+}
+
+.login-title {
+	margin-bottom: 20px;
+}
+
+.user-options {
+    display: flex;
+    flex-direction: column; /* Apila botones verticalmente en pantallas pequeñas */
+    gap: 10px; /* Espacio entre los botones */
+    margin-bottom: 16px; /* Margen inferior */
+}
+
+.user-button {
+    padding: 15px; /* Espaciado interno */
+    background-color: rgb(0, 0, 0); /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Efecto de transición */
+    width: 100%; /* Botones ocupan el 100% del ancho */
+}
+
+.user-button:hover {
+    background-color: rgb(100, 100, 100); /* Color de fondo al pasar el ratón */
+}
+
+label {
+    display: block; /* Bloque para etiquetas */
+    margin: 8px 0; /* Margen superior e inferior */
+    font-size: 14px; /* Tamaño de fuente */
+    color: #fff; /* Color del texto de las etiquetas */
+}
+
+input {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #fff; /* Borde blanco */
+    border-radius: 4px; /* Bordes redondeados */
+    margin-bottom: 16px; /* Margen inferior */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo con opacidad */
+    color: #fff; /* Color del texto en los inputs */
+}
+
+input::placeholder {
+    color: #fff; /* Color del texto del placeholder */
+}
+
+.login-button {
+    padding: 15px 30px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: rgb(100, 100, 100);
+}
+
+/* Media Queries para pantallas más grandes */
+@media (min-width: 600px) {
+    .user-options {
+        flex-direction: row; /* Alinea los botones en fila en pantallas más grandes */
+    }
+    .user-button {
+        flex: 1; /* Distribuye el ancho entre los botones */
+        margin: 0 5px; /* Espacio lateral entre botones */
+    }
+}

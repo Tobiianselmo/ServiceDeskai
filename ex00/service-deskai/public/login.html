@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Service Desk</title>
+    <link rel="shortcut icon" href="Images/ig-icon.ico" type="image/x-icon">
+    <link href="../src/login.css" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <p class="login-title">Select your user type:</p>
+        
+        <div class="user-options">
+            <button id="standardUserButton" class="user-button" onclick="setUserType('standard')"><a class="button-link" href="standard.html">Standard</a></button>
+            <button id="serviceDeskUserButton" class="user-button" onclick="setUserType('serviceDesk')"><a class="button-link" href="servicedesk.html">Service</a></button>
+            <button href="admin.html" id="adminUserButton" class="user-button" onclick="setUserType('admin')"><a class="button-link" href="admin.html">Admin</a></button>
+        </div>
+        
+        <form id="loginForm">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" required placeholder="your@email.com">
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" required placeholder="********">
+            
+            <button type="submit" class="login-button">Login</button>
+        </form>
+    </div>
+    <script src="../src/auth.js"></script>
+</body>
+</html>
